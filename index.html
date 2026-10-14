@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GINSI Connect</title>
+    <meta
+      name="description"
+      content="GINSI Connect static project landing page and portal interface."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="toast" id="toast" aria-live="polite"></div>
+
+      <main class="auth-layout">
+        <section class="visual-panel">
+          <div class="panel-overlay"></div>
+          <div class="visual-content">
+            <span class="badge">GINSI Logistics Core</span>
+            <h1>GINSI CONNECT</h1>
+            <p>
+              Portal integrasi impor dan akselerasi legalitas kepabeanan untuk
+              operasional bisnis global.
+            </p>
+          </div>
+        </section>
+
+        <section class="form-panel">
+          <div class="auth-card" id="login-view">
+            <p class="eyebrow">Hello!</p>
+            <h2>Welcome back!</h2>
+            <p class="subtitle">Login to your account using any email</p>
+
+            <form id="login-form">
+              <label for="login-email">Email / Username</label>
+              <input
+                id="login-email"
+                name="email"
+                type="text"
+                value="budi.santoso@globalniaga.co.id"
+                placeholder="Enter your email"
+                required
+              />
+
+              <div class="password-row">
+                <label for="login-password">Password</label>
+                <button type="button" class="link-button" id="password-help">
+                  Forgot password?
+                </button>
+              </div>
+              <input
+                id="login-password"
+                name="password"
+                type="password"
+                value="password123"
+                placeholder="Enter your password"
+                required
+              />
+
+              <button class="primary-button" type="submit">
+                Login to GINSI Portal
+              </button>
+            </form>
+
+            <p class="switch-text">
+              Don’t have an account?
+              <button type="button" class="link-button" id="show-signup">
+                Sign up now
+              </button>
+            </p>
+          </div>
+
+          <div class="auth-card hidden" id="signup-view">
+            <p class="eyebrow">Hello!</p>
+            <h2>Nice to meet you!</h2>
+            <p class="subtitle">Create your account with any email</p>
+
+            <form id="signup-form">
+              <label for="signup-name">Full name</label>
+              <input id="signup-name" name="name" type="text" placeholder="Your full name" required />
+
+              <label for="signup-email">Email</label>
+              <input id="signup-email" name="email" type="email" placeholder="your@email.com" required />
+
+              <label for="signup-password">Password</label>
+              <input id="signup-password" name="password" type="password" placeholder="Create a password" required />
+
+              <button class="primary-button" type="submit">Create account</button>
+            </form>
+
+            <p class="switch-text">
+              Already have an account?
+              <button type="button" class="link-button" id="show-login">
+                Sign in
+              </button>
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
